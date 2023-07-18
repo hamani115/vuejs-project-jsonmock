@@ -1,7 +1,12 @@
 {
     "serenity-2368-15-i5:9191": [
         {
-            "cc_main": {}
-        },
+            "id": 1,
+            "category": "animal welfare",
+            "title": "Frenz of bunz",
+            "description": "🐰 an frenz",
+            "location": "Zoom - stay safe",
+            "pets": 1,
+        }
     ]
 }
