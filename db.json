@@ -1,6 +1,5 @@
 {
-    "events": [
-                    {
+    "events": {
                 "console_output": [
                     "Parsing LPGBT0 config",
                     "Parsing LPGBT1 config",
@@ -57,5 +56,5 @@
                     ]
                 }
             }
-    ]
+        }
 }
