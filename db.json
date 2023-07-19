@@ -1,15 +1,61 @@
 {
     "events": [
-        {
-            "id": 1,
-            "category": "animal welfare",
-            "title": "Frenz of bunz",
-            "description": "🐰 an frenz",
-            "location": "Zoom - stay safe",
-            "pets": 1,
-            "extras": {
-                "catering": true,
-                "music": true
+                    {
+                "console_output": [
+                    "Parsing LPGBT0 config",
+                    "Parsing LPGBT1 config",
+                    "Parsing GBTSCAA config",
+                    "Parsing GBTSCAB config",
+                    "CC Initializing LPGBT0",
+                    "connected link no:  4",
+                    "-----> 10001100"
+                ],
+                "return_values": {},
+                "Application_exception": {
+                    "Exception Type": "exception",
+                    "message": "Waiting replies timeout.",
+                    "Other": {},
+                    "Traceback": [
+                        "Traceback (most recent call last):",
+                        "  File \"./mtddaq.py\", line 20, in wrapper",
+                        "    result = func(*args, **kwargs)",
+                        "  File \"./mtddaq.py\", line 53, in invoke_cc_main",
+                        "    return cc_main(os.path.join(MTD_DAQ_DIR, r'cfg/CC_config.cfg'), verbose=False)",
+                        "  File \"/home/cmx/emp-toolbox_lpgbtv1_4/mtd-daq-python2pythonInterface/mtd_daq/timer.py\", line 10, in wrapper",
+                        "    result = func(*args, **kwargs)",
+                        "  File \"/home/cmx/emp-toolbox_lpgbtv1_4/mtd-daq-python2pythonInterface/mtd_daq/cc_main_dev.py\", line 11, in cc_main",
+                        "    cc.init_cc()",
+                        "  File \"/home/cmx/emp-toolbox_lpgbtv1_4/mtd-daq-python2pythonInterface/mtd_daq/cc_controller.py\", line 39, in init_cc",
+                        "    setattr(self, asic_name, asic_class_(self.parsed_config[asic_name]))",
+                        "  File \"/home/cmx/emp-toolbox_lpgbtv1_4/mtd-daq-python2pythonInterface/mtd_daq/lpgbt_controller_dev.py\", line 200, in __init__",
+                        "    self.set_adc()",
+                        "  File \"/home/cmx/emp-toolbox_lpgbtv1_4/mtd-daq-python2pythonInterface/mtd_daq/lpgbt_controller_dev.py\", line 745, in set_adc",
+                        "    self.vref_enable(True, int(self.adc_calib_mapping[\"vref\"]))",
+                        "  File \"/home/cmx/lpgbt_control_lib/lpgbt_control_lib/lpgbt.py\", line 75, in decorator",
+                        "    raise error",
+                        "  File \"/home/cmx/lpgbt_control_lib/lpgbt_control_lib/lpgbt.py\", line 72, in decorator",
+                        "    retval = method(self, *args, **kwargs)",
+                        "  File \"/home/cmx/lpgbt_control_lib/lpgbt_control_lib/lpgbt_v1.py\", line 99, in vref_enable",
+                        "    self.write_reg(self.VREFCNTR, cntr)",
+                        "  File \"/home/cmx/lpgbt_control_lib/lpgbt_control_lib/lpgbt.py\", line 75, in decorator",
+                        "    raise error",
+                        "  File \"/home/cmx/lpgbt_control_lib/lpgbt_control_lib/lpgbt.py\", line 72, in decorator",
+                        "    retval = method(self, *args, **kwargs)",
+                        "  File \"/home/cmx/lpgbt_control_lib/lpgbt_control_lib/lpgbt.py\", line 140, in write_reg",
+                        "    self.write_regs(reg_addr, [reg_val])",
+                        "  File \"/home/cmx/lpgbt_control_lib/lpgbt_control_lib/lpgbt.py\", line 75, in decorator",
+                        "    raise error",
+                        "  File \"/home/cmx/lpgbt_control_lib/lpgbt_control_lib/lpgbt.py\", line 72, in decorator",
+                        "    retval = method(self, *args, **kwargs)",
+                        "  File \"/home/cmx/lpgbt_control_lib/lpgbt_control_lib/lpgbt.py\", line 152, in write_regs",
+                        "    self._comm_intfs[comm_intf][\"write_regs\"](reg_addr=reg_addr, reg_vals=reg_vals)",
+                        "  File \"/home/cmx/emp-toolbox_lpgbtv1_4/mtd-daq-python2pythonInterface/mtd_daq/lpgbt_controller_dev.py\", line 119, in write_lpgbt_regs",
+                        "    self.lpgbt_com.ic_write(reg_addr, reg_vals, lpgbt_addr=int(self.lpgbt_addr,0))",
+                        "  File \"/home/cmx/emp-toolbox_lpgbtv1_4/mtd-daq-python2pythonInterface/mtd_daq/lpgbt_controller_dev.py\", line 41, in ic_write",
+                        "    self.emp_cont.getSCCIC().icWriteBlock(addr, values, lpgbt_addr)",
+                        "emp._emp_python.exception: Waiting replies timeout."
+                    ]
+                }
             }
         }
     ]
