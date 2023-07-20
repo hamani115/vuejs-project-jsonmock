@@ -1,6 +1,5 @@
 {
     "events": {
-                "serenity-2368-15-i5": {
                     "init_cc" : {
                                 "console_output": [
                             "Parsing LPGBT0 config",
@@ -59,5 +58,5 @@
                         }
                     }
                 }
-            }
+            
         }
