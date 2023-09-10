@@ -1,59 +1,16 @@
 {
-    "events": {
-                        "console_output": [
-                    "Parsing LPGBT511 config",
-                    "Parsing LPGBT512 config",
-                    "Parsing GBTSCAD config",
-                    "Parsing GBTSCAE config",
-                    "CC Initializing LPGBT511",
-                    "connected link no:  115",
-                    "-----> 1111111="
-                ],
-                "return_values": {},
-                "Application_exception": {
-                    "Exception Type": "exception",
-                    "message": "Waiting replies timeout.",
-                    "Other": {},
-                    "Traceback": [
-                        "Traceback (most recent call last):",
-                        "  File \"",
-                        "    func(*args, **kwargs)",
-                        "  File \"",
-                        "    return ",
-                        "  File \"",
-                        "    func(*args, **kwargs)",
-                        "  File \"",
-                        "    cc()",
-                        "  File \"",
-                        "    set()",
-                        "  File \"",
-                        "    self()",
-                        "  File \"",
-                        "    self()",
-                        "  File \"",
-                        "    raise error",
-                        "  File \"",
-                        "    retval = method(self, *args, **kwargs)",
-                        "  File \"",
-                        "    self()",
-                        "  File \"",
-                        "    raise error",
-                        "  File \"",
-                        "    retval = method(self, *args, **kwargs)",
-                        "  File \"",
-                        "    self()",
-                        "  File \"",
-                        "    raise error",
-                        "  File \"",
-                        "    method(self, *args, **kwargs)",
-                        "  File \"",
-                        "    self()",
-                        "  File \"",
-                        "    self()",
-                        "  File \"",
-                        "    self()",
-                        "emp._emp_python.exception: Waiting replies timeout."
-                    ]
-                }
+    "events": [
+        {
+            "id": 1,
+            "category": "animal welfare",
+            "title": "Frenz of bunz",
+            "description": "🐰 an frenz",
+            "location": "Zoom - stay safe",
+            "pets": 1,
+            "extras": {
+                "catering": true,
+                "music": true
             }
         }
+    ]
+}
